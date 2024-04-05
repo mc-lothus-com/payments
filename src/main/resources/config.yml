@@ -1,0 +1,34 @@
+database:
+  host: 127.0.0.1
+  port: 3306
+  username: user
+  password: password
+  database: database
+
+gateways:
+  MERCADO_PAGO:
+    authentication: "token"
+
+discord:
+  token: "TOKEN"
+  channels:
+    sell: "CHANNEL_ID"
+
+  embeds:
+    sell:
+      color: BLACK
+      title: "Uma nova venda foi encontrada!"
+      description: "Uma nova venda do produto {product} foi encontrada!"
+      fields:
+        player: "Comprador"
+        price: "Custo"
+        rate: "Taxa"
+      footer: "Adquirido por {player} em {date}"
+categories:
+  Example:
+    name: "Categoria Exemplo"
+    description:
+      - ""
+    icon:
+      material: DIAMOND
+      id: 0

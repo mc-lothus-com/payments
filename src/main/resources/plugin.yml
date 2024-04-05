@@ -1,0 +1,9 @@
+name: BRPayments
+version: '${project.version}'
+main: me.toddydev.bukkit.BukkitMain
+author: Toddy
+depend:
+  - core
+  - main-lobby
+softdepend:
+  - PlaceholderAPI
